@@ -1,0 +1,265 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="page.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="../bootStrapProject//bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <!-- <script src="./rating.js"></script> -->
+</head>
+
+<body>
+
+    <!-- <script>
+        document.getElementById("description").onclick =function(){}
+    </script> -->
+
+    <div class="container-fluid justify-content-between">
+        <nav class="navbar navbar-expand navbar-info " style="background-color:  blueviolet;">
+            <a class="navbar-brand">OREO </a>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-class-name"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- <input class="form-control w-25 p-3" type="search" value="search" id="example-search-input"> -->
+        </nav>
+        <nav class=" secondNavBar  border navbar-expand navbar-info ">
+            <h5 class="p">Product</h5>
+
+            <p class="p1">Welcome to Oreo</p>
+        </nav>
+
+        <div class="productdetailcard">
+
+            <div class="row" style="width:100%;">
+                <div class="productCard">
+                    <img src="./images/celphone.jpeg" id="CellPhone"
+                        class="img-responsive imagesForProductDetails  img-thumbnail img-fluid ">
+
+                </div>
+                <div class="column" style="height: 100%;">
+                    <div class="headingOfProductName">CellPhone</div>
+                    <div class="row" style="margin-left: 5px;">
+                        <div class="currentPrice">Current Price:</div>
+                        <p style=" color:brown; margin-left: 5px; font-weight: bold; margin-top: 7px;">$130</p>
+                    </div>
+                    <div class=".mt-sm-1 mt-lg-5 informationAboutProduct" style="width: 100%;">
+                        A backpack (also called rucksack, knapsack, packsack, pack, Haversack, or Bergen) is a cloth
+                        sack put on somebody's back.cbcvbcbcvb ghfghgf
+                        <div> It usually has two straps that go over the shoulders. It is used to
+                            carry things in it, and it often has many compartments to carry things.
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-left:19px; margin-top: 15px;">
+                        <p style="font-size: small; font-weight: bold;">78%</p>
+                        <div style="margin-left: 5px; margin-top: 2px; font-size:10px;">of buyers enjoyed this product!
+                        </div>
+                        <p style="font-size: 10px; margin-top: 2px; margin-left: 1px; font-weight: bold;">(12 Votes)</p>
+                    </div>
+
+                    <div class="row" style="margin-left: 15px;">
+                        <div class="sizesHeading">Sizes: </div>
+                        <div style="margin-left: 30px;">
+                            <button type="button" class="btn btn-white btn-sm"
+                                style="font-weight:bold; font-size: medium;">s</button>
+                            <button type="button" class="btn btn-white btn-sm" style="font-weight:bold">m</button>
+                            <button type="button" class="btn btn-white btn-sm" style="font-weight:bold">l</button>
+                            <button type="button" class="btn btn-white btn-sm" style="font-weight:bold">xl</button>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-left: 10px;">
+                        <div class="colorsHeading">
+                            Colors:
+                        </div>
+
+                        <div style="margin-top: 10px; margin-left: 24px;">
+                            <button type="button" class="btn btn-sq btn-warning"></button>
+                            <button type="button" class="btn btn-sq btn-success" style="margin-left: 10px;"></button>
+                            <button type="button" class="btn btn-sq btn-primary" style="margin-left: 10px;"></button>
+                        </div>
+                    </div>
+
+
+                    <div style=" margin-left: 12px;">
+                        <button type="button" class="btn  btn-rounded addToCard"
+                            style="background-color:  purple;border-radius: 35px; font: bold;  color: white;">add
+                            to cart</button>
+                        <button type="button" style="margin-left: 3px; background-color: purple;"
+                            class="btn btn-circle addToCard">
+                            <i class="fa fa-check" style="color: white;">.</i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+                <div class="firstSmallCard">
+                    <button>
+                        <img src="images/cellphone1.jpeg" id="CellPhone1"
+                            class="img-responsive  imagesForSmallCard img-thumbnail img-fluid ">
+                    </button>
+                </div>
+                <div class="smallcard">
+                    <button>
+                        <img src="images/cellphone2.jpeg" id="CellPhone2"
+                            class="img-responsive imagesForSmallCard  img-thumbnail img-fluid" style="width: auto;">
+                    </button>
+                </div>
+                <div class="smallcard">
+                    <button>
+                        <img src="images/cellphone3.jpeg" id="CellPhone3"
+                            class="img-responsive imagesForSmallCard  img-thumbnail img-fluid">
+                    </button>
+                </div>
+                <div class="smallcard">
+                    <button>
+                        <img src="images/cellphone4.jpeg" id="CellPhone4"
+                            class="img-responsive  imagesForSmallCard img-thumbnail img-fluid">
+                    </button>
+                </div>
+                <div class="smallcard">
+                    <button>
+                        <img src="images/cellphone5.jpeg" id="CellPhone5"
+                            class="img-responsive imagesForSmallCard   img-thumbnail img-fluid ">
+                    </button>
+                </div>
+            </div>
+
+            <script>
+                $(document).ready(function () {
+                    $("#CellPhone1").click(function () {
+                        $("#CellPhone").attr("src"
+                            , " images/cellphone1.jpeg")
+
+                        if ($(Window).width() >= 1200) {
+
+                            $("#CellPhone").height('350px')
+                                .width('100%')
+                        }
+                        if ($(window).width() <= 600) {
+                            ("#CellPhonet").height('291px')
+                                .width('100 %')
+                        }
+                    });
+
+                    $("#CellPhone2").click(function () {
+                        $("#CellPhone").attr("src", "images/cellphone2.jpeg")
+                        if ($(Window).width() >= 1200) {
+
+                            $("#CellPhone").height('350px')
+                                .width('100%')
+                        }
+                        if ($(window).width() <= 600) {
+                            ("#CellPhone").height('291px')
+                                .width('100 %')
+                        }
+                    });
+
+                    $("#CellPhone3").click(function () {
+                        $("#CellPhone").attr("src", "images/cellphone3.jpeg")
+                        if ($(Window).width() >= 1200) {
+
+                            $("#CellPhone").height('350px')
+                                .width('100%')
+                        }
+                        if ($(window).width() <= 600) {
+                            ("#CellPhone").height('291px')
+                                .width('100 %')
+                        }
+                    });
+
+                    $("#CellPhone4").click(function () {
+                        $("#CellPhone").attr("src", "images/cellphone4.jpeg")
+                        if ($(Window).width() >= 1200) {
+
+                            $("#CellPhone").height('350px')
+                                .width('100%')
+                        }
+                        if ($(window).width() <= 600) {
+                            ("#CellPhone").height('291px')
+                                .width('100 %')
+                        }
+                    });
+
+                    $("#CellPhone5").click(function () {
+                        $("#CellPhone").attr("src"
+                            , "images/cellphone5.jpeg")
+                        if ($(Window).width() >= 1200) {
+
+                            $("#CellPhone").height('350px')
+                                .width('100%')
+                        }
+                        if ($(window).width() <= 600) {
+                            ("#CellPhone").height('291px')
+                                .width('100 %')
+                        }
+                    })
+
+                })
+            </script>
+
+            <div class="row">
+                <ul class="nav">
+                    <li>
+                        <a href="#desciption" data-toggle="tab">
+                            <button type="button" class="btn  btn-rounded  Description "
+                                style="border-radius: 35px; font: bold;font-size:15px;  color:black;">Description
+                            </button>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#review" data-toggle="tab">
+                            <button type="button" class="btn  btn-rounded  Description "
+                                style="border-radius: 35px; margin-left: 10px; font: bold;font-size:15px;  color:black;">Review
+                            </button>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about" data-toggle="tab">
+                            <button type="button" class="btn  btn-rounded  Description "
+                                style="border-radius: 35px;margin-left: 10px; font: bold;font-size:15px;  color:black;">About
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="tab-content" style="background-color:white; margin-left: -13px;">
+                <div class="explanation tab-pane active" id="desciption">
+                    Backpacks are commonly used by hikers and students, and are often preferred to handbags for carrying
+                    heavy loads or carrying any sort of equipment, because of the limited capacity to carry heavy
+                    weights for long periods of time in the hands.
+                </div>
+
+                <div class="explanation tab-pane" id="review">
+                    Good Quality
+                </div>
+
+                <div class="explanation tab-pane" id="about">
+                    Backpacks are commonly used by hikers and students, and are often preferred to handbags for carrying
+                    heavy loads or carrying any sort of equipment, because of the limited capacity to carry heavy
+                    weights for long periods of time in the hands.
+                    about
+                </div>
+            </div>
+
+
+        </div>
+</body>
+
+</html>
