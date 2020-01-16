@@ -309,7 +309,7 @@
             margin-left: 19px;
              margin-right: -25;
               font-size: 12px;
-              margin-top: 15px;
+              margin-top: 25px;
 
               /* mt-sm-2; mt-xs-0; mt-lg-2 */
         }
@@ -366,7 +366,7 @@
         @media only screen and (max-width:600px) {
             .smallCard{
             margin-left: 8px; 
-            margin-top: -479px;          }
+            margin-top: -470px;             }
         }
          
         @media only screen and (width:320px) {
@@ -374,7 +374,7 @@
                 height: 45px;
                 width: 50px;
             margin-left: 8px; 
-            margin-top: -500px;          
+            margin-top: -490px;          
            }
         }
                 
@@ -389,7 +389,7 @@
         @media only screen and (max-width:600px) {
             .firstSmallCard{
             margin-left: 17px;  
-            margin-top: -479px;      
+            margin-top: -470px;         
            }
         }
 
@@ -398,7 +398,7 @@
                 height: 50px;
                 width: 50;
             margin-left: 1pc; 
-            margin-top: -500px;           
+            margin-top: -490px;         
            }
         }
 
@@ -407,7 +407,7 @@
                 height: 60px;
                 width: 60px;
             margin-left: 1pc; 
-            margin-top: -480px;           
+            margin-top: -470px;          
            }
         }
 
@@ -446,21 +446,66 @@
                font-weight: bold;
         }
 
+            .label{
+                display: inline-block;
+                background-color: yellow;
+            }
 
+
+            .rating{
+                direction: rtl;
+            }
+            .rating  input{
+                display: none;
+            }
+
+            .rating label{ 
+                display: inline-block;
+                width: 13px;
+                position: relative;
+                cursor: pointer;
+            }
+
+             .rating label:before{
+                 content: "\2605";
+                 position: absolute;
+                 font-size: 16px;
+                 /* display: inline */
+             }
+
+             .rating label:after{
+                content: "\2605";
+                position: absolute;
+                font-size: 16px;
+                display: inline-block;
+                color: yellow;
+                opacity: 0;
+            }
+
+            .rating label:hover:after{
+            opacity: 3;
+            }
+
+            .rating label:hover:after,
+            .rating label:hover~label:after,
+            .rating input:checked~label:after{
+                opacity: 3;
+                }
+    
          .ratingDiv{
-             margin-left: 1.5pc;
-             margin-top: -3px;
+             margin-left: 1pc;
+             margin-top: -15px;
+             position: absolute;
+             height: 30px;
+             width: 330px;
              /* margin-top: 2px; */
          }
 
-            .fa{
-                font-size: 25px;
-            }
+            .fa-star{
+                font-size: 45px;
+           }
  
-            .checked{
-            color: gold;
-            }
-
+            
         .imagesForProductDetails{
             height: 350px;
             max-width: 100%;
@@ -574,8 +619,8 @@
 
     .explanation{
         margin-left: 7px;
-        font-size: 17px;
-        margin-top:19px;
+        font-size: 13px;
+        margin-top:17px;
     }
 
   @media only screen and (max-width:600px) {

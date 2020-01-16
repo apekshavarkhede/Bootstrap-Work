@@ -50,13 +50,38 @@
                     </div>
 
                     <div class="ratingDiv">
-                            <span class="fa fa-star-o  rating"></span>
-                            <span class="fa fa-star-o rating"></span>
-                            <span class="fa fa-star-o rating"></span>
-                            <span class="fa fa-star-o "></span>
-                            <span class="fa fa-star-o "></span>
-                            
-                    </div>
+                            <i class="fa fa-star" aria-hidden="true" id="star-1"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="star-2"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="star-3"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="star-4"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="star-5"></i>
+                        </div>
+    
+                        <script>
+                            $(document).ready(function () {
+                                $("#star-1").click(function () {
+                                    $(".fa-star").css("color", "black")
+                                    $("#star-1").css("color", "yellow")
+                                });
+                                $("#star-2").click(function () {
+                                    $(".fa-star").css("color", "black")
+                                    $("#star-2,#star-1").css("color", "yellow")
+                                });
+                                $("#star-3").click(function () {
+                                    $(".fa-star").css("color", "black")
+                                    $("#star-3,#star-2,#star-1").css("color", "yellow")
+                                });
+                                $("#star-4").click(function () {
+                                    $(".fa-star").css("color", "black")
+                                    $("#star-4,#star-3,#star-2,#star-1").css("color", "yellow")
+                                });
+                                $("#star-5").click(function () {
+                                    $(".fa-star").css("color", "black")
+                                    $(".fa-star").css("color", "yellow")
+                                });
+                            })
+                        </script>
+    
                     <div class=" informationAboutProduct" style="width: 100%;">
                         A backpack (also called rucksack, knapsack, packsack, pack, Haversack, or Bergen) is a cloth
                         sack put on somebody's back.cbcvbcbcvb ghfghgf
@@ -148,7 +173,7 @@
                             , "images/perfume1.jpeg")
                         if ($(Window).width() >= 1200) {
 
-                            $("#perfume").height('350px')
+                            $("#perfume").height('340px')
                                 .width('100%')
                         }
                         if ($(window).width() <= 600) {
@@ -161,7 +186,7 @@
                         $("#perfume").attr("src", "images/perfume2.jpeg")
                         if ($(Window).width() >= 1200) {
 
-                            $("#perfume").height('350px')
+                            $("#perfume").height('340px')
                                 .width('100%')
                         }
                         if ($(window).width() <= 600) {
@@ -178,7 +203,7 @@
                                 .width('100%')
                         }
                         if ($(window).width() <= 600) {
-                            ("#perfume").height('291px')
+                            ("#perfume").height('340px')
                                 .width('100 %')
                         }
                     });
@@ -187,7 +212,7 @@
                         $("#perfume").attr("src", "images/perfume4.jpeg")
                         if ($(Window).width() >= 1200) {
 
-                            $("#perfume").height('350px')
+                            $("#perfume").height('340px')
                                 .width('100%')
                         }
                         if ($(window).width() <= 600) {
@@ -201,7 +226,7 @@
                             , "images/perfume5.jpeg")
                         if ($(Window).width() >= 1200) {
 
-                            $("#perfume").height('350px')
+                            $("#perfume").height('340px')
                                 .width('100%')
                         }
                         if ($(window).width() <= 600) {

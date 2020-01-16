@@ -9,6 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="../bootStrapProject//bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- <script src="./rating.js"></script> -->
 </head>
 
@@ -43,6 +45,41 @@
                         <div class="currentPrice">Current Price:</div>
                         <p class="price">$130</p>
                     </div>
+
+                    <div class="ratingDiv">
+                            <i class="fa fa-star" aria-hidden="true" id="star-1"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="star-2"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="star-3"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="star-4"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="star-5"></i>
+                        </div>
+    
+                        <script>
+                            $(document).ready(function () {
+                                $("#star-1").click(function () {
+                                    $(".fa-star").css("color", "black")
+                                    $("#star-1").css("color", "yellow")
+                                });
+                                $("#star-2").click(function () {
+                                    $(".fa-star").css("color", "black")
+                                    $("#star-2,#star-1").css("color", "yellow")
+                                });
+                                $("#star-3").click(function () {
+                                    $(".fa-star").css("color", "black")
+                                    $("#star-3,#star-2,#star-1").css("color", "yellow")
+                                });
+                                $("#star-4").click(function () {
+                                    $(".fa-star").css("color", "black")
+                                    $("#star-4,#star-3,#star-2,#star-1").css("color", "yellow")
+                                });
+                                $("#star-5").click(function () {
+                                    $(".fa-star").css("color", "black")
+                                    $(".fa-star").css("color", "yellow")
+                                });
+                            })
+                        </script>
+    
+
                     <div class=".mt-sm-1 mt-lg-5 informationAboutProduct" style="width: 100%;">
                         A backpack (also called rucksack, knapsack, packsack, pack, Haversack, or Bergen) is a cloth
                         sack put on somebody's back.cbcvbcbcvb ghfghgf
@@ -136,7 +173,7 @@
 
                         if ($(Window).width() >= 1200) {
 
-                            $("#watch").height('350px')
+                            $("#watch").height('340px')
                                 .width('100%')
                         }
                         if ($(window).width() <= 600) {
@@ -149,7 +186,7 @@
                         $("#watch").attr("src", "images/watch2.jpeg")
                         if ($(Window).width() >= 1200) {
 
-                            $("#watch").height('350px')
+                            $("#watch").height('340px')
                                 .width('100%')
                         }
                         if ($(window).width() <= 600) {
@@ -162,7 +199,7 @@
                         $("#watch").attr("src", "images/watch3.jpeg")
                         if ($(Window).width() >= 1200) {
 
-                            $("#watch").height('350px')
+                            $("#watch").height('340px')
                                 .width('100%')
                         }
                         if ($(window).width() <= 600) {
@@ -175,7 +212,7 @@
                         $("#watch").attr("src", "images/watch4.jpeg")
                         if ($(Window).width() >= 1200) {
 
-                            $("#watch").height('350px')
+                            $("#watch").height('340px')
                                 .width('100%')
                         }
                         if ($(window).width() <= 600) {
@@ -189,7 +226,7 @@
                             , "images/watch5.jpeg")
                         if ($(Window).width() >= 1200) {
 
-                            $("#watch").height('350px')
+                            $("#watch").height('340px')
                                 .width('100%')
                         }
                         if ($(window).width() <= 600) {
